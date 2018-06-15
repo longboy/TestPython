@@ -91,13 +91,14 @@ print(f2)
 
 
 # 函数文档
-def ss(name,*args):
+def ss(name, *args):
     '''
     第一行啊
     第二行行啊
     第三行行行啊
     '''
 
+
 help(ss)
-print("*"*30)
+print("*" * 30)
 print(ss.__doc__)

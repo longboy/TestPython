@@ -14,7 +14,9 @@ data = parse.urlencode(data).encode("utf-8")
 headers = {
     'Content-Length': len(data)
 }
-rsp = request.urlopen(baseurl, data=data)
+
+req = request.Request(url=baseurl, data=data, headers=headers)
+rsp = request.urlopen(req)
 json_data = rsp.read().decode("utf-8")
 print(json_data)
 

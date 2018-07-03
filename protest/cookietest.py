@@ -39,6 +39,6 @@ def getHomePage():
 
 if __name__ == '__main__':
     login()
-    # getHomePage()
+    getHomePage()
 
-    print(cookie)
+    # print(cookie)

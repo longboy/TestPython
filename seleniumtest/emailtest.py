@@ -13,3 +13,5 @@ emails = re.findall(r'[\w]+@[\w\.-]+', doc)
 # 循环打印匹配的邮箱
 for email in emails:
     print(email)
+
+print(driver.capabilities['version'])

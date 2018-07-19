@@ -8,6 +8,8 @@ driver.get("https://www.baidu.com")
 time.sleep(1)
 # 弹框
 # driver.execute_script("window.alert('这是一个alert弹框。');")
+# time.sleep(2)
+# driver.switch_to_alert().accept()
 driver.get("https://tieba.baidu.com/index.html")
 time.sleep(1)
 

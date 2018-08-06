@@ -8,7 +8,7 @@ class BaiduSearch(object):
     driver.implicitly_wait(10)
 
     def open_baidu(self):
-        self.driver.get("https://www.baidu.com")
+        self.driver.get("http://www.baidu.com")
         time.sleep(1)
 
     def test_search(self):
@@ -23,10 +23,11 @@ class BaiduSearch(object):
             print('Test fail.')
         self.driver.quit()
 
+if __name__ == '__main__':
 
-baidu = BaiduSearch()
-baidu.open_baidu()
-baidu.test_search()
+    baidu = BaiduSearch()
+    baidu.open_baidu()
+    baidu.test_search()
 
 
 # class ClassA(object):

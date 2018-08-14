@@ -55,8 +55,11 @@ class BasePage(object):
         :param none:
         """
         file_path = os.path.dirname(os.getcwd()) + '/TestPython/Screenshots/'
-        rq = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
-        screen_name = file_path + rq + '.png'
+        if not os.path.exists(file_path):
+            os.mkdir(file_path)
+        else:
+            rq = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+            screen_name = file_path + rq + '.png'
         try:
             self.driver.get_screenshot_as_file(screen_name)
             logger.info("开始截图并保存")

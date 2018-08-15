@@ -1,5 +1,9 @@
 from seleniumtest.classtest import ClassTest
 
+'''
+子类
+'''
+
 
 class ClassChild(ClassTest):
     def test_inherit(self):

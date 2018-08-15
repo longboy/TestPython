@@ -1,8 +1,10 @@
 import time
 from selenium import webdriver
+
 '''
 父类
 '''
+
 
 class ClassTest(object):
     def open_baidu(self):

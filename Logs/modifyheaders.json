@@ -1,0 +1,30 @@
+{
+  "beijing": {
+    "action": "Add",
+    "name": "X-Forwarded-For",
+    "value": "220.181.16.59",
+    "comment": "Bei Jing",
+    "enabled": false
+  },
+  "guangzhou": {
+    "action": "Add",
+    "name": "X-Forwarded-For",
+    "value": "219.137.226.207",
+    "comment": "Guang Zhou",
+    "enabled": false
+  },
+  "dongguan": {
+    "action": "Add",
+    "name": "X-Forwarded-For",
+    "value": "125.93.75.187",
+    "comment": "Dong Guan",
+    "enabled": false
+  },
+  "shanghai": {
+    "action": "Add",
+    "name": "X-Forwarded-For",
+    "value": "123.125.71.38",
+    "comment": "shang hai",
+    "enabled": false
+  }
+}
